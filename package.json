@@ -1,0 +1,27 @@
+{
+  "name": "test-praticeautomation",
+  "version": "1.0.0",
+  "description": "![Cypress](https://img.shields.io/badge/Cypress-E2E%20Testing-green?style=flat&logo=cypress) \r ![Node.js](https://img.shields.io/badge/Node.js-v14.x%20LTS-green?style=flat&logo=node.js)\r ![QA Automation](https://img.shields.io/badge/QA%20Automation-Continuous%20Testing-orange?style=flat&logo=testing-library)\r ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat)",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoCavalcanti777/test-PraticeAutomation.git"
+  },
+  "keywords": [],
+  "author": "Rodrigo Cavalcanti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoCavalcanti777/test-PraticeAutomation/issues"
+  },
+  "homepage": "https://github.com/RodrigoCavalcanti777/test-PraticeAutomation#readme",
+  "dependencies": {
+    "cypress": "^14.1.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0"
+  }
+}

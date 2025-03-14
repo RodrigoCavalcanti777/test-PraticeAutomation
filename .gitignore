@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+*package-lock.json
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+cypress/output/
+cypress/cache/
+
+# Arquivos de log
+*.log
+
+# Arquivos de ambiente
+.env
+*.env.local
+*.env.development
+*.env.production
+
+# Outros
+Thumbs.db # Arquivos do Windows
