@@ -27,7 +27,7 @@ describe('Cenaries of teste / HomePage', () =>{
         Home.validadeRedirectPromo();
     });
 
-    it.only('', () => {
-        Home.validateTopics();
+    it.only('Validate Top Products', () => {
+        Home.validadeBannerTopicProducts()     
     });
 })
