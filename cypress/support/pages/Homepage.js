@@ -19,21 +19,18 @@ const footerPage = {
 }
 
 class HomePage {
-
     //Caso de Teste de validação de acesso a Homepage da aplicação
     validateHomepage(){
         cy.get(acessHomepage)
             .should('be.visible')
             .should('be.exist');
     }
-
     //Caso de teste de validação do carrosel da Homepage
     validateCarroselHome(){
         cy.get(carrosel)
             .should('be.visible')
             .should('be.exist');
     }
-
     //Caso de teste de validação de redirecionamento para a PromoPage
     validadeRedirectPromo(){
         cy.contains(promo,'Aproveitar...')
@@ -42,12 +39,9 @@ class HomePage {
         .click();
         cy.wait(1000);
         cy.url().should('eq', 'https://www.automationpratice.com.br/shop');
-
         //Aplicação com  erro nesta validação:?
         //Bug aparentemente estranho, pois é um problema de network/requisição realizada de forma anormal pela aplicação.
-
     }
-
     //Caso de teste para validação dos tópicos
     //Este caso de teste realiza validação do tópicos de produtos da homepage
     validadeBannerTopicProducts(){
@@ -75,10 +69,7 @@ class HomePage {
         //Caso de teste para validação do banner do Instagram na página
     }
 
-
-
     //Caso de teste para validação de exibição Footer da página
-
     validateFooterPage(){
         cy.get(footerPage.footer)
         .should('be.visible')
