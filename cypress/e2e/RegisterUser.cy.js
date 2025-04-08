@@ -2,7 +2,7 @@
 
 const RegisterPage = require("../support/pages/RegisterPage");
 const baseUrl = Cypress.config('baseUrl');
-import { faker, Faker } from "@faker-js/faker";
+import { faker} from "@faker-js/faker";
 
 
 const email = faker.internet.email();
@@ -19,6 +19,7 @@ describe('Cenaries of test / RegisterUser', () =>{
 
     //Caso de teste de validação completa do registerUser
     it('Complete process of Register User', () =>{
+        RegisterPage.registrationFlow();
         RegisterPage.validateLogin(name, email, password);
     })
 

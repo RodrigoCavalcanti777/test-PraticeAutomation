@@ -18,5 +18,9 @@ cypress/cache/
 *.env.development
 *.env.production
 
+#allure-reports
+allure-report/
+allure-results/
+
 # Outros
 Thumbs.db # Arquivos do Windows

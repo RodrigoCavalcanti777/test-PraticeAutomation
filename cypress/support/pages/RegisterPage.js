@@ -9,15 +9,19 @@ const RegisterAlert ='.swal2-popup';
 
 
 class RegisterPage {
-    //Realizar Login válido com sucesso
 
-    validateLogin(name,email,password){
+    //Fluxo para se chegar na rota de registro de user
+    registrationFlow(){
         cy.get(RegisterUser).contains('Cadastro')
         .should('be.exist')
         .should('be.visible')
             .click()
         cy.url().should('eq', 'https://www.automationpratice.com.br/register')
+    }
 
+    //Validar footer da página
+    //Realizar Todo o fluxo de Registro de usuario
+    validateLogin(name,email,password){
         cy.get(Registername)
         .should('be.exist')
         .should('be.visible')

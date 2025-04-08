@@ -48,8 +48,7 @@ class Favbar {
     }
 
     //Validar exibição do wishlist
-    validateWishList(){
-        this.validateFavbarFunction();
+    validateWishList(){ 
         cy.get('.theme-btn-one ').contains('View wishlist')
             .click()
         cy.url().should('eq', 'https://www.automationpratice.com.br/wishlist')
@@ -58,7 +57,6 @@ class Favbar {
         .should('be.exist');
     }
 
-    //Criação de casos de teste também para página de favoritos    
 }
 
 
