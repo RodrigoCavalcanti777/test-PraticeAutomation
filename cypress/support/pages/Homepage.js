@@ -33,7 +33,7 @@ class HomePage {
     }
     //Caso de teste de validação de redirecionamento para a PromoPage
     validadeRedirectPromo(){
-        cy.contains(promo,'Aproveitar...')
+        cy.get(promo).contains('Aproveitar...')
             .should('be.visible')
             .should('be.exist')
         .click();

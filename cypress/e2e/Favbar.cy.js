@@ -1,8 +1,7 @@
 ///<reference types = "cypress"/>
 
 const baseUrl = Cypress.config("baseUrl");
-const FavBar = require('../support/pages/FavBar');
-
+const favbar = require('../support/pages/FavBar.js');
 describe('Cenaries of teste - FavBar', () =>{
 
     beforeEach(() => {  
@@ -12,23 +11,27 @@ describe('Cenaries of teste - FavBar', () =>{
         cy.clearAllLocalStorage();  
     })
 
+    //refazer todos os testes deste arquivo
+
     it('Deve adicionar um item ao FavBar', () => {
-       FavBar.validateFavbar();
+       favbar.validateFavbar();
     });  
 
     it('Deve adicionar um item ao FavBar', () => {
-        FavBar.validateFavbarFunction();
+        favbar.validateFavbarFunction();
      });
 
    it('Adição de itens aos Favoritos', () =>{
-        FavBar.validateaddItensFavBar();
+        favbar.validateaddItensFavBar();
    });
    
    it('Validar exclusão de itens na FavBar', () =>{
-        FavBar.validateDeleteFav();
+        favbar.validateDeleteFav();
    });
 
-   it.only('Validar exibição da Página WishList', () =>{
-        FavBar.validateWishList();
+   it('Validar exibição da Página WishList', () =>{    
+          favbar.validateFavbarFunction();
+          favbar.validateWishList();    
+          
    });
 })

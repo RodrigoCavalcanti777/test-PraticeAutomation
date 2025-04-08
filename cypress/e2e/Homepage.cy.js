@@ -23,7 +23,7 @@ describe('Cenaries of teste / HomePage', () =>{
         
     });
 
-    it('Redirect to promo:/', () =>{
+    it.only('Redirect to promo:/', () =>{
         Home.validadeRedirectPromo();
     });
 
@@ -31,7 +31,7 @@ describe('Cenaries of teste / HomePage', () =>{
         Home.validadeBannerTopicProducts()     
     });
 
-    it.only('Validate Footer of Homepage:/', () =>{
+    it('Validate Footer of Homepage:/', () =>{
         Home.validateFooterPage();
     });
 })
